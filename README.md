@@ -9,6 +9,8 @@ for an Application.
 The plugin is based on Intel's sample plugin and most of the StoreKit integration code is taken from an article by 
 Ray Wenderlich: http://www.raywenderlich.com/21081/introduction-to-in-app-purchases-in-ios-6-tutorial (Thanks!)
 
+IMPORTANT: This plugin collides with AppMobi's 1Touch, I assume because of the transaction observers (not sure since I'm pretty new to Objective-C). If someone can figure out how to make them work together, please share!
+
 I see a lot of room for improvement to this plugin which I hope the community can help.
 
 Here are some of the things that can definitely be improved:
