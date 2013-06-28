@@ -26,6 +26,8 @@ under the MyPlugin/InAppPurchase.m file:
 the productIdentifiers NSSet variable needs to have the list of purchases that you will allow. Make sure to remove the
 @"SamplePurchaseIdA", @"SamplePurchaseIDB" for a list of you in-App purchase(s).
 
+IMPORTANT: You will not be able to test this plugin until you have created your in-App purchase(s) and have a test user (read Ray's article for more info).
+
 Take a look at the index.html on how to include the myplugin.js file, how to trigger the buy and restore processes
 and finally how to capture the events. The index.html file is by no means part of the plugin, but you will need to 
 include some of its code in your index.html file.
