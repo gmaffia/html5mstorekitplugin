@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>StoreKit Plugin</title>
+	<!-- Include jquery.js the way you want. I store it under lib/ext/jquery.js -->
+	<script type="text/javascript" charset="utf-8" src="lib/ext/jquery.js"></script>
+	<script type="text/javascript">			
+			//this function will work cross-browser for loading scripts asynchronously
+			function loadScript(src) {
+				$.getScript(src)
+				.done(function(script, textStatus) {
+				  console.log( textStatus );
+				})
+				.fail(function(jqxhr, settings, exception) {				  
+				  console.log( "Triggered ajaxError handler: " + exception);
+				});
+			}	
+			
+			// Define webview global vars
+			
+			// purchases contains the products that you have purchased/restored after a transaction			
+			var purchases = [];			
+						
+			// IMPORTANT: Load Plugin Asynchronically (synch way doesn't work)
+			loadScript('_appMobi/myplugin.js');	
+				
+			/* This code is used to run as soon as appMobi activates */
+			var onDeviceReady=function(){				
+				AppMobi.device.hideStatusBar();
+				AppMobi.device.managePower(false,false);
+				AppMobi.device.setRotateOrientation("landscape");				
+				AppMobi.device.setAutoRotate(false);
+				
+				AppMobi.display.useViewport(768,1024);
+				
+				document.getElementsByTagName('body')[0].style.visibility="visible";							
+												
+				// This line lets DC know it's being used. 
+				AppMobi.canvas.load("index.js");								
+										
+				// Stub for plugin. This is just for the emulator to not fail
+				// when trying to purchase/restore purchase and let you continue 
+				// the workflow of your app.
+				// The 'SamplePurchaseIdA' and 'SamplePurcahseIdB are the product id that has been either
+				// bought or restored in this case
+				if(AppMobi.isxdk) { 
+					MyPlugin = {
+						worker: {
+							buyProductWork: function(productIdentifier) {								
+								var e = {
+									productIdentifier: productIdentifier
+								}
+								onStoreKitPluginBuyProductSuccess(e);
+							},
+							restorePurchasesWork: function() {		
+								purchases.push('SamplePurchaseIdA');
+								purchases.push('SamplePurchaseIdB');
+								onStoreKitPluginRestorePurchases();
+							}
+							
+						}
+					};
+				}											
+			}				
+			
+			// Setting event handlers
+			document.addEventListener("appMobi.device.ready",onDeviceReady,false);
+			document.addEventListener("myplugin.ready",onStoreKitPluginReady,false);												
+			document.addEventListener("myplugin.workrestorepurchases", onStoreKitPluginRestorePurchases, false);			
+			document.addEventListener("myplugin.workbuyproduct", onStoreKitPluginBuyProduct, false);			
+			document.addEventListener("myplugin.workbuyproductsuccess", onStoreKitPluginBuyProductSuccess, false);						
+			document.addEventListener("myplugin.workbuyproductfail", onStoreKitPluginBuyProductFail, false);									
+			
+			// Triggered when restoring purchases.
+			function onStoreKitPluginRestorePurchases() {
+				if(purchases.length >= 0) {
+					AppMobi.notification.alert('Your purchases have been restored!','Success','Thanks!');
+					// You might want to store the purchases in the cache/cookie here.
+				} else {
+					AppMobi.notification.alert('We could not find purchases to restore!','Failed','Thanks!');
+				}
+			}
+			
+			// Triggered when buying a product
+			function onStoreKitPluginBuyProduct() {}			
+			
+			// Triggered when the plugin is ready
+			function onStoreKitPluginReady() {}
+			
+			// Triggered when a buy transacction is completed successfully
+			function onStoreKitPluginBuyProductSuccess(e) {
+				AppMobi.notification.alert('Congratulations for your purchase!','Success','Thanks!');
+				// you might want to store your purchase in the cache/cookies
+			}
+			
+			// Triggered when a buy transaction fails
+			function onStoreKitPluginBuyProductFail(e) {
+				AppMobi.notification.alert('Buying ' + e.productIdentifier + ' failed. Please try again. ','Fail','OK');
+			}			
+			
+	</script>
+	
+	
+	<style type="text/css">
+		/*** Prevent copy paste for all elements except text fields ***/
+		* { 
+			-webkit-user-select: none; 
+			-webkit-tap-highlight-color: rgba(0,0,0,0);			
+		}
+		input, textarea { -webkit-user-select:text; }	
+		
+		/** Prevent outlines on focus **/
+		textarea:focus, input:focus{
+			outline: none;
+		}
+		
+		html,body {
+			color: #fff;
+			font-family: helvetica, arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			font-size: 12pt;			
+		}
+		
+		#canvas {
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+		}		
+	</style>
+</head>
+<body>	
+	<button onclick="javascript:MyPlugin.worker.restorePurchasesWork();" >Restore Purchases</button>
+	<button onclick="javascript:MyPlugin.worker.buyProductWork('SamplePurchaseIdA');" >Buy Product A</button>
+	<button onclick="javascript:MyPlugin.worker.buyProductWork('SamplePurchaseIdB');" >Buy Product B</button>
+</body>
+</html>

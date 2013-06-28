@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		301BF5BB109A6A2B0062928A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF5BA109A6A2B0062928A /* AVFoundation.framework */; };
+		301BF5BD109A6A2B0062928A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF5BC109A6A2B0062928A /* CFNetwork.framework */; };
+		301BF5BF109A6A2B0062928A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF5BE109A6A2B0062928A /* CoreLocation.framework */; };
+		301BF5C3109A6A2B0062928A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF5C2109A6A2B0062928A /* QuartzCore.framework */; };
+		301BF5C5109A6A2B0062928A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF5C4109A6A2B0062928A /* SystemConfiguration.framework */; };
+		302CC88910CD8CCE00C49659 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 302CC88710CD8CCE00C49659 /* icon.png */; };
+		732EC48313747865008ED6AA /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 732EC47813747865008ED6AA /* NSObject+SBJSON.m */; };
+		732EC48413747865008ED6AA /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 732EC47A13747865008ED6AA /* NSString+SBJSON.m */; };
+		732EC48513747865008ED6AA /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 732EC47C13747865008ED6AA /* SBJSON.m */; };
+		732EC48613747865008ED6AA /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 732EC47E13747865008ED6AA /* SBJsonBase.m */; };
+		732EC48713747865008ED6AA /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 732EC48013747865008ED6AA /* SBJsonParser.m */; };
+		732EC48813747865008ED6AA /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 732EC48213747865008ED6AA /* SBJsonWriter.m */; };
+		732EC49813747887008ED6AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 732EC48A13747887008ED6AA /* AppDelegate.m */; };
+		732EC49913747887008ED6AA /* AppMobiCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 732EC48D13747887008ED6AA /* AppMobiCommand.m */; };
+		732EC49A13747887008ED6AA /* AppMobiDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 732EC48F13747887008ED6AA /* AppMobiDelegate.m */; };
+		732EC49B13747887008ED6AA /* AppMobiDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 732EC49113747887008ED6AA /* AppMobiDevice.m */; };
+		732EC49C13747887008ED6AA /* AppMobiModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 732EC49313747887008ED6AA /* AppMobiModule.m */; };
+		732EC49D13747887008ED6AA /* AppMobiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 732EC49513747887008ED6AA /* AppMobiViewController.m */; };
+		732EC49E13747887008ED6AA /* InvokedCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 732EC49713747887008ED6AA /* InvokedCommand.m */; };
+		732EC4A81374789E008ED6AA /* MyPluginCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 732EC4A11374789E008ED6AA /* MyPluginCommand.m */; };
+		732EC4A91374789E008ED6AA /* MyPluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 732EC4A31374789E008ED6AA /* MyPluginModule.m */; };
+		732EC4AA1374789E008ED6AA /* MyPluginSetup.m in Sources */ = {isa = PBXBuildFile; fileRef = 732EC4A51374789E008ED6AA /* MyPluginSetup.m */; };
+		732EC4AB1374789E008ED6AA /* MyPluginWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 732EC4A71374789E008ED6AA /* MyPluginWorker.m */; };
+		732EC95E1378A7A9008ED6AA /* AppMobiWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 732EC95D1378A7A9008ED6AA /* AppMobiWebView.m */; };
+		7902F936120348E100E27BE5 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 7902F935120348E100E27BE5 /* index.html */; };
+		7902F93A1203497300E27BE5 /* icon_ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 7902F9391203497300E27BE5 /* icon_ipad.png */; };
+		79608B3D1420E6A90079DE22 /* MyPluginCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 732EC4A11374789E008ED6AA /* MyPluginCommand.m */; };
+		79608B3E1420E6A90079DE22 /* MyPluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 732EC4A31374789E008ED6AA /* MyPluginModule.m */; };
+		79608B3F1420E6A90079DE22 /* MyPluginSetup.m in Sources */ = {isa = PBXBuildFile; fileRef = 732EC4A51374789E008ED6AA /* MyPluginSetup.m */; };
+		79608B401420E6A90079DE22 /* MyPluginWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 732EC4A71374789E008ED6AA /* MyPluginWorker.m */; };
+		79694333112AF63400590151 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79694332112AF63400590151 /* MessageUI.framework */; };
+		79775675137ECE2D007BAB08 /* gcc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 79775674137ECE2D007BAB08 /* gcc.cpp */; };
+		7977567C137ECE6C007BAB08 /* appmobi_iphone.js in Resources */ = {isa = PBXBuildFile; fileRef = 79775676137ECE3D007BAB08 /* appmobi_iphone.js */; };
+		7977567D137ECE6C007BAB08 /* myplugin.js in Resources */ = {isa = PBXBuildFile; fileRef = 79775677137ECE3D007BAB08 /* myplugin.js */; };
+		B93FD9E01776203E003E8EDE /* MyPluginCommand.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 732EC4A01374789E008ED6AA /* MyPluginCommand.h */; };
+		B93FD9E117762047003E8EDE /* MyPluginModule.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 732EC4A21374789E008ED6AA /* MyPluginModule.h */; };
+		B93FD9E217762052003E8EDE /* MyPluginSetup.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 732EC4A41374789E008ED6AA /* MyPluginSetup.h */; };
+		B93FD9E317762058003E8EDE /* MyPluginWorker.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 732EC4A61374789E008ED6AA /* MyPluginWorker.h */; };
+		B93FD9E4177620F3003E8EDE /* myplugin.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79775677137ECE3D007BAB08 /* myplugin.js */; };
+		B93FD9E617768AEB003E8EDE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B93FD9E517768AEB003E8EDE /* StoreKit.framework */; };
+		B93FD9EA17768F0E003E8EDE /* IAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B93FD9E917768F0E003E8EDE /* IAPHelper.m */; };
+		B93FD9EB17768F0E003E8EDE /* IAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B93FD9E917768F0E003E8EDE /* IAPHelper.m */; };
+		B93FD9EE17769640003E8EDE /* InAppPurchase.m in Sources */ = {isa = PBXBuildFile; fileRef = B93FD9ED17769640003E8EDE /* InAppPurchase.m */; };
+		B93FD9EF17769640003E8EDE /* InAppPurchase.m in Sources */ = {isa = PBXBuildFile; fileRef = B93FD9ED17769640003E8EDE /* InAppPurchase.m */; };
+		B93FD9F01776A1CB003E8EDE /* IAPHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B93FD9E817768F0E003E8EDE /* IAPHelper.h */; };
+		B93FD9F11776A1D8003E8EDE /* InAppPurchase.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B93FD9EC17769640003E8EDE /* InAppPurchase.h */; };
+		B93FD9F2177794F4003E8EDE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B93FD9E517768AEB003E8EDE /* StoreKit.framework */; };
+		EAF3055111DBDE8800ECCD1C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAF3055011DBDE8800ECCD1C /* MobileCoreServices.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B93FD9DF177611A8003E8EDE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				B93FD9F11776A1D8003E8EDE /* InAppPurchase.h in CopyFiles */,
+				B93FD9F01776A1CB003E8EDE /* IAPHelper.h in CopyFiles */,
+				B93FD9E4177620F3003E8EDE /* myplugin.js in CopyFiles */,
+				B93FD9E317762058003E8EDE /* MyPluginWorker.h in CopyFiles */,
+				B93FD9E217762052003E8EDE /* MyPluginSetup.h in CopyFiles */,
+				B93FD9E117762047003E8EDE /* MyPluginModule.h in CopyFiles */,
+				B93FD9E01776203E003E8EDE /* MyPluginCommand.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D6058910D05DD3D006BFB54 /* appMobiPlugin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appMobiPlugin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
+		301BF5BA109A6A2B0062928A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		301BF5BC109A6A2B0062928A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		301BF5BE109A6A2B0062928A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		301BF5C2109A6A2B0062928A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		301BF5C4109A6A2B0062928A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		302CC88710CD8CCE00C49659 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = SOURCE_ROOT; };
+		32CA4F630368D1EE00C91783 /* prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prefix.pch; sourceTree = SOURCE_ROOT; };
+		732EC47613747865008ED6AA /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSON.h; path = Classes/JSON/JSON.h; sourceTree = SOURCE_ROOT; };
+		732EC47713747865008ED6AA /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+SBJSON.h"; path = "Classes/JSON/NSObject+SBJSON.h"; sourceTree = SOURCE_ROOT; };
+		732EC47813747865008ED6AA /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+SBJSON.m"; path = "Classes/JSON/NSObject+SBJSON.m"; sourceTree = SOURCE_ROOT; };
+		732EC47913747865008ED6AA /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+SBJSON.h"; path = "Classes/JSON/NSString+SBJSON.h"; sourceTree = SOURCE_ROOT; };
+		732EC47A13747865008ED6AA /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+SBJSON.m"; path = "Classes/JSON/NSString+SBJSON.m"; sourceTree = SOURCE_ROOT; };
+		732EC47B13747865008ED6AA /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJSON.h; path = Classes/JSON/SBJSON.h; sourceTree = SOURCE_ROOT; };
+		732EC47C13747865008ED6AA /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJSON.m; path = Classes/JSON/SBJSON.m; sourceTree = SOURCE_ROOT; };
+		732EC47D13747865008ED6AA /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonBase.h; path = Classes/JSON/SBJsonBase.h; sourceTree = SOURCE_ROOT; };
+		732EC47E13747865008ED6AA /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonBase.m; path = Classes/JSON/SBJsonBase.m; sourceTree = SOURCE_ROOT; };
+		732EC47F13747865008ED6AA /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonParser.h; path = Classes/JSON/SBJsonParser.h; sourceTree = SOURCE_ROOT; };
+		732EC48013747865008ED6AA /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonParser.m; path = Classes/JSON/SBJsonParser.m; sourceTree = SOURCE_ROOT; };
+		732EC48113747865008ED6AA /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonWriter.h; path = Classes/JSON/SBJsonWriter.h; sourceTree = SOURCE_ROOT; };
+		732EC48213747865008ED6AA /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = Classes/JSON/SBJsonWriter.m; sourceTree = SOURCE_ROOT; };
+		732EC48913747887008ED6AA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		732EC48A13747887008ED6AA /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		732EC48C13747887008ED6AA /* AppMobiCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppMobiCommand.h; path = Classes/appMobiLib/AppMobiCommand.h; sourceTree = SOURCE_ROOT; };
+		732EC48D13747887008ED6AA /* AppMobiCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppMobiCommand.m; path = Classes/appMobiLib/AppMobiCommand.m; sourceTree = SOURCE_ROOT; };
+		732EC48E13747887008ED6AA /* AppMobiDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppMobiDelegate.h; path = Classes/appMobiLib/AppMobiDelegate.h; sourceTree = SOURCE_ROOT; };
+		732EC48F13747887008ED6AA /* AppMobiDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppMobiDelegate.m; path = Classes/appMobiLib/AppMobiDelegate.m; sourceTree = SOURCE_ROOT; };
+		732EC49013747887008ED6AA /* AppMobiDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppMobiDevice.h; path = Classes/appMobiLib/AppMobiDevice.h; sourceTree = SOURCE_ROOT; };
+		732EC49113747887008ED6AA /* AppMobiDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppMobiDevice.m; path = Classes/appMobiLib/AppMobiDevice.m; sourceTree = SOURCE_ROOT; };
+		732EC49213747887008ED6AA /* AppMobiModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppMobiModule.h; path = Classes/appMobiLib/AppMobiModule.h; sourceTree = SOURCE_ROOT; };
+		732EC49313747887008ED6AA /* AppMobiModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppMobiModule.m; path = Classes/appMobiLib/AppMobiModule.m; sourceTree = SOURCE_ROOT; };
+		732EC49413747887008ED6AA /* AppMobiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppMobiViewController.h; path = Classes/appMobiLib/AppMobiViewController.h; sourceTree = SOURCE_ROOT; };
+		732EC49513747887008ED6AA /* AppMobiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppMobiViewController.m; path = Classes/appMobiLib/AppMobiViewController.m; sourceTree = SOURCE_ROOT; };
+		732EC49613747887008ED6AA /* InvokedCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InvokedCommand.h; path = Classes/appMobiLib/InvokedCommand.h; sourceTree = SOURCE_ROOT; };
+		732EC49713747887008ED6AA /* InvokedCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InvokedCommand.m; path = Classes/appMobiLib/InvokedCommand.m; sourceTree = SOURCE_ROOT; };
+		732EC4A01374789E008ED6AA /* MyPluginCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyPluginCommand.h; path = Classes/MyPlugin/MyPluginCommand.h; sourceTree = SOURCE_ROOT; };
+		732EC4A11374789E008ED6AA /* MyPluginCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyPluginCommand.m; path = Classes/MyPlugin/MyPluginCommand.m; sourceTree = SOURCE_ROOT; };
+		732EC4A21374789E008ED6AA /* MyPluginModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyPluginModule.h; path = Classes/MyPlugin/MyPluginModule.h; sourceTree = SOURCE_ROOT; };
+		732EC4A31374789E008ED6AA /* MyPluginModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyPluginModule.m; path = Classes/MyPlugin/MyPluginModule.m; sourceTree = SOURCE_ROOT; };
+		732EC4A41374789E008ED6AA /* MyPluginSetup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyPluginSetup.h; path = Classes/MyPlugin/MyPluginSetup.h; sourceTree = SOURCE_ROOT; };
+		732EC4A51374789E008ED6AA /* MyPluginSetup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyPluginSetup.m; path = Classes/MyPlugin/MyPluginSetup.m; sourceTree = SOURCE_ROOT; };
+		732EC4A61374789E008ED6AA /* MyPluginWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyPluginWorker.h; path = Classes/MyPlugin/MyPluginWorker.h; sourceTree = SOURCE_ROOT; };
+		732EC4A71374789E008ED6AA /* MyPluginWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyPluginWorker.m; path = Classes/MyPlugin/MyPluginWorker.m; sourceTree = SOURCE_ROOT; };
+		732EC95C1378A7A9008ED6AA /* AppMobiWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppMobiWebView.h; path = Classes/appMobiLib/AppMobiWebView.h; sourceTree = SOURCE_ROOT; };
+		732EC95D1378A7A9008ED6AA /* AppMobiWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppMobiWebView.m; path = Classes/appMobiLib/AppMobiWebView.m; sourceTree = SOURCE_ROOT; };
+		732ED0E8137D8AFC008ED6AA /* libMyPlugin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMyPlugin.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7902F935120348E100E27BE5 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = SOURCE_ROOT; };
+		7902F9391203497300E27BE5 /* icon_ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_ipad.png; sourceTree = SOURCE_ROOT; };
+		79694332112AF63400590151 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		79775674137ECE2D007BAB08 /* gcc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gcc.cpp; sourceTree = SOURCE_ROOT; };
+		79775676137ECE3D007BAB08 /* appmobi_iphone.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = appmobi_iphone.js; sourceTree = SOURCE_ROOT; };
+		79775677137ECE3D007BAB08 /* myplugin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = myplugin.js; sourceTree = SOURCE_ROOT; };
+		79C2E99511DD2A6F004F0766 /* info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = SOURCE_ROOT; };
+		B93FD9E517768AEB003E8EDE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		B93FD9E817768F0E003E8EDE /* IAPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IAPHelper.h; path = MyPlugin/IAPHelper.h; sourceTree = "<group>"; };
+		B93FD9E917768F0E003E8EDE /* IAPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IAPHelper.m; path = MyPlugin/IAPHelper.m; sourceTree = "<group>"; };
+		B93FD9EC17769640003E8EDE /* InAppPurchase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InAppPurchase.h; path = MyPlugin/InAppPurchase.h; sourceTree = "<group>"; };
+		B93FD9ED17769640003E8EDE /* InAppPurchase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InAppPurchase.m; path = MyPlugin/InAppPurchase.m; sourceTree = "<group>"; };
+		EAF3055011DBDE8800ECCD1C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B93FD9F2177794F4003E8EDE /* StoreKit.framework in Frameworks */,
+				301BF5BB109A6A2B0062928A /* AVFoundation.framework in Frameworks */,
+				301BF5BD109A6A2B0062928A /* CFNetwork.framework in Frameworks */,
+				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				301BF5BF109A6A2B0062928A /* CoreLocation.framework in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				79694333112AF63400590151 /* MessageUI.framework in Frameworks */,
+				EAF3055111DBDE8800ECCD1C /* MobileCoreServices.framework in Frameworks */,
+				301BF5C3109A6A2B0062928A /* QuartzCore.framework in Frameworks */,
+				301BF5C5109A6A2B0062928A /* SystemConfiguration.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		732ED0E6137D8AFC008ED6AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B93FD9E617768AEB003E8EDE /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				732EC48913747887008ED6AA /* AppDelegate.h */,
+				732EC48A13747887008ED6AA /* AppDelegate.m */,
+				732EC48B13747887008ED6AA /* appMobiLib */,
+				EAF3000611DA7E1E00ECCD1C /* JSON */,
+				732EC49F1374789E008ED6AA /* MyPlugin */,
+			);
+			path = Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* appMobiPlugin.app */,
+				732ED0E8137D8AFC008ED6AA /* libMyPlugin.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				B93FD9E517768AEB003E8EDE /* StoreKit.framework */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				79775674137ECE2D007BAB08 /* gcc.cpp */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				32CA4F630368D1EE00C91783 /* prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				79775676137ECE3D007BAB08 /* appmobi_iphone.js */,
+				302CC88710CD8CCE00C49659 /* icon.png */,
+				7902F9391203497300E27BE5 /* icon_ipad.png */,
+				7902F935120348E100E27BE5 /* index.html */,
+				79C2E99511DD2A6F004F0766 /* info.plist */,
+				79775677137ECE3D007BAB08 /* myplugin.js */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				301BF5BA109A6A2B0062928A /* AVFoundation.framework */,
+				301BF5BC109A6A2B0062928A /* CFNetwork.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+				301BF5BE109A6A2B0062928A /* CoreLocation.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				79694332112AF63400590151 /* MessageUI.framework */,
+				EAF3055011DBDE8800ECCD1C /* MobileCoreServices.framework */,
+				301BF5C2109A6A2B0062928A /* QuartzCore.framework */,
+				301BF5C4109A6A2B0062928A /* SystemConfiguration.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		732EC48B13747887008ED6AA /* appMobiLib */ = {
+			isa = PBXGroup;
+			children = (
+				732EC48C13747887008ED6AA /* AppMobiCommand.h */,
+				732EC48D13747887008ED6AA /* AppMobiCommand.m */,
+				732EC48E13747887008ED6AA /* AppMobiDelegate.h */,
+				732EC48F13747887008ED6AA /* AppMobiDelegate.m */,
+				732EC49013747887008ED6AA /* AppMobiDevice.h */,
+				732EC49113747887008ED6AA /* AppMobiDevice.m */,
+				732EC49213747887008ED6AA /* AppMobiModule.h */,
+				732EC49313747887008ED6AA /* AppMobiModule.m */,
+				732EC49413747887008ED6AA /* AppMobiViewController.h */,
+				732EC49513747887008ED6AA /* AppMobiViewController.m */,
+				732EC95C1378A7A9008ED6AA /* AppMobiWebView.h */,
+				732EC95D1378A7A9008ED6AA /* AppMobiWebView.m */,
+				732EC49613747887008ED6AA /* InvokedCommand.h */,
+				732EC49713747887008ED6AA /* InvokedCommand.m */,
+			);
+			name = appMobiLib;
+			sourceTree = "<group>";
+		};
+		732EC49F1374789E008ED6AA /* MyPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				732EC4A01374789E008ED6AA /* MyPluginCommand.h */,
+				732EC4A11374789E008ED6AA /* MyPluginCommand.m */,
+				732EC4A21374789E008ED6AA /* MyPluginModule.h */,
+				732EC4A31374789E008ED6AA /* MyPluginModule.m */,
+				732EC4A41374789E008ED6AA /* MyPluginSetup.h */,
+				732EC4A51374789E008ED6AA /* MyPluginSetup.m */,
+				732EC4A61374789E008ED6AA /* MyPluginWorker.h */,
+				732EC4A71374789E008ED6AA /* MyPluginWorker.m */,
+				B93FD9E817768F0E003E8EDE /* IAPHelper.h */,
+				B93FD9E917768F0E003E8EDE /* IAPHelper.m */,
+				B93FD9EC17769640003E8EDE /* InAppPurchase.h */,
+				B93FD9ED17769640003E8EDE /* InAppPurchase.m */,
+			);
+			name = MyPlugin;
+			sourceTree = "<group>";
+		};
+		EAF3000611DA7E1E00ECCD1C /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				732EC47613747865008ED6AA /* JSON.h */,
+				732EC47713747865008ED6AA /* NSObject+SBJSON.h */,
+				732EC47813747865008ED6AA /* NSObject+SBJSON.m */,
+				732EC47913747865008ED6AA /* NSString+SBJSON.h */,
+				732EC47A13747865008ED6AA /* NSString+SBJSON.m */,
+				732EC47B13747865008ED6AA /* SBJSON.h */,
+				732EC47C13747865008ED6AA /* SBJSON.m */,
+				732EC47D13747865008ED6AA /* SBJsonBase.h */,
+				732EC47E13747865008ED6AA /* SBJsonBase.m */,
+				732EC47F13747865008ED6AA /* SBJsonParser.h */,
+				732EC48013747865008ED6AA /* SBJsonParser.m */,
+				732EC48113747865008ED6AA /* SBJsonWriter.h */,
+				732EC48213747865008ED6AA /* SBJsonWriter.m */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* appMobiPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "appMobiPlugin" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = appMobiPlugin;
+			productName = appMobiPlugin;
+			productReference = 1D6058910D05DD3D006BFB54 /* appMobiPlugin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		732ED0E7137D8AFC008ED6AA /* MyPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 732ED0ED137D8B1A008ED6AA /* Build configuration list for PBXNativeTarget "MyPlugin" */;
+			buildPhases = (
+				732ED0E5137D8AFC008ED6AA /* Sources */,
+				732ED0E6137D8AFC008ED6AA /* Frameworks */,
+				B93FD9DF177611A8003E8EDE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyPlugin;
+			productName = MyPlugin;
+			productReference = 732ED0E8137D8AFC008ED6AA /* libMyPlugin.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "appMobiPlugin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* appMobiPlugin */,
+				732ED0E7137D8AFC008ED6AA /* MyPlugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7977567C137ECE6C007BAB08 /* appmobi_iphone.js in Resources */,
+				302CC88910CD8CCE00C49659 /* icon.png in Resources */,
+				7902F93A1203497300E27BE5 /* icon_ipad.png in Resources */,
+				7902F936120348E100E27BE5 /* index.html in Resources */,
+				7977567D137ECE6C007BAB08 /* myplugin.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				732EC48313747865008ED6AA /* NSObject+SBJSON.m in Sources */,
+				732EC48413747865008ED6AA /* NSString+SBJSON.m in Sources */,
+				732EC48513747865008ED6AA /* SBJSON.m in Sources */,
+				732EC48613747865008ED6AA /* SBJsonBase.m in Sources */,
+				732EC48713747865008ED6AA /* SBJsonParser.m in Sources */,
+				732EC48813747865008ED6AA /* SBJsonWriter.m in Sources */,
+				732EC49813747887008ED6AA /* AppDelegate.m in Sources */,
+				732EC49913747887008ED6AA /* AppMobiCommand.m in Sources */,
+				732EC49A13747887008ED6AA /* AppMobiDelegate.m in Sources */,
+				732EC49B13747887008ED6AA /* AppMobiDevice.m in Sources */,
+				732EC49C13747887008ED6AA /* AppMobiModule.m in Sources */,
+				732EC49D13747887008ED6AA /* AppMobiViewController.m in Sources */,
+				732EC49E13747887008ED6AA /* InvokedCommand.m in Sources */,
+				732EC4A81374789E008ED6AA /* MyPluginCommand.m in Sources */,
+				732EC4A91374789E008ED6AA /* MyPluginModule.m in Sources */,
+				732EC4AA1374789E008ED6AA /* MyPluginSetup.m in Sources */,
+				732EC4AB1374789E008ED6AA /* MyPluginWorker.m in Sources */,
+				732EC95E1378A7A9008ED6AA /* AppMobiWebView.m in Sources */,
+				79775675137ECE2D007BAB08 /* gcc.cpp in Sources */,
+				B93FD9EA17768F0E003E8EDE /* IAPHelper.m in Sources */,
+				B93FD9EE17769640003E8EDE /* InAppPurchase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		732ED0E5137D8AFC008ED6AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79608B3D1420E6A90079DE22 /* MyPluginCommand.m in Sources */,
+				79608B3E1420E6A90079DE22 /* MyPluginModule.m in Sources */,
+				79608B3F1420E6A90079DE22 /* MyPluginSetup.m in Sources */,
+				79608B401420E6A90079DE22 /* MyPluginWorker.m in Sources */,
+				B93FD9EB17768F0E003E8EDE /* IAPHelper.m in Sources */,
+				B93FD9EF17769640003E8EDE /* InAppPurchase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = prefix.pch;
+				INFOPLIST_FILE = info.plist;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = appMobiPlugin;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		732ED0E9137D8AFC008ED6AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PREBINDING = NO;
+				PRODUCT_NAME = MyPlugin;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		732ED0EB137D8AFC008ED6AA /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gonzalo Gerones (FVN6ET7HMX)";
+				PREBINDING = NO;
+				PRODUCT_NAME = MyPlugin;
+				PROVISIONING_PROFILE = "4831AC8A-2322-410B-A8A3-D778E56EF2C2";
+				SDKROOT = iphoneos;
+			};
+			name = AdHoc;
+		};
+		732ED0EC137D8AFC008ED6AA /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gonzalo Gerones (FVN6ET7HMX)";
+				PREBINDING = NO;
+				PRODUCT_NAME = MyPlugin;
+				PROVISIONING_PROFILE = "4831AC8A-2322-410B-A8A3-D778E56EF2C2";
+				SDKROOT = iphoneos;
+			};
+			name = Distribution;
+		};
+		7976F06011176A9300A8BFCE /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				CODE_SIGN_ENTITLEMENTS = adhoc.plist;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Don't Code Sign";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-Obj-C",
+				);
+				PREBINDING = NO;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AdHoc;
+		};
+		7976F06111176A9300A8BFCE /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = prefix.pch;
+				INFOPLIST_FILE = info.plist;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = appMobiPlugin;
+			};
+			name = AdHoc;
+		};
+		7976F06211176A9800A8BFCE /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Rosco Schock";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"UniversalApp=1",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				PREBINDING = NO;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E95EC93F-01C8-480D-AAB7-D911EE7BBEB5";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Distribution;
+		};
+		7976F06311176A9800A8BFCE /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = prefix.pch;
+				INFOPLIST_FILE = info.plist;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = appMobiPlugin;
+			};
+			name = Distribution;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"UniversalApp=1",
+					"DEBUG=1",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.2;
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "appMobiPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				7976F06111176A9300A8BFCE /* AdHoc */,
+				7976F06311176A9800A8BFCE /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		732ED0ED137D8B1A008ED6AA /* Build configuration list for PBXNativeTarget "MyPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				732ED0E9137D8AFC008ED6AA /* Debug */,
+				732ED0EB137D8AFC008ED6AA /* AdHoc */,
+				732ED0EC137D8AFC008ED6AA /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "appMobiPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				7976F06011176A9300A8BFCE /* AdHoc */,
+				7976F06211176A9800A8BFCE /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
