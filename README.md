@@ -46,10 +46,11 @@ about building plugins for the iOS platform.
   * MyPluginModule.h
   * MyPluginSetup.h
   * MyPluginWorker.h
-  You need to place the libMyPlugin.a and all these files (forget that they are under the include/MyPlugin directory0 all
-  in the same level (move them to a different folder if you want) and zip them.
-  *NOTE: I'm not entirely sure about this, but I think that adding only the MyPluginModule.h header file instead of all the header files will do. Didn't have time to try it though.
-  *THIS IS IMPORTANT: Do not zip the folder these files are in, just zip the files so they are in the root of your zip file.
+  
+You need to place the libMyPlugin.a and all these files (forget that they are under the include/MyPlugin directory) all in the same level (move them to a different folder if you want) and zip them.
+*NOTE: I'm not entirely sure about this, but I think that adding only the MyPluginModule.h header file instead of all the header files will do. Didn't have time to try it though.
+*THIS IS IMPORTANT: Do not zip the folder these files are in, just zip the files so they are in the root of your zip file.
+
 7. In the plugin section of the build process when building your app, add this zip file. The class name of the plugin is MyPluginModule (I guess for the description you can just write anything, but I used the same than the class name)
 8. Build your app, and enjoy!
 
